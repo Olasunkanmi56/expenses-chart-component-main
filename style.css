@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'DM+Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Cream);
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+
+.card-1 {
+    width: 400px;
+    height: 100px;
+    background-color:var(--Soft-red);
+    border-radius:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-1 {
+    font-size: 18px;
+    color: var(--Very-pale-orange);
+    padding-left: 10px;
+    margin-bottom: 7px;
+    opacity: 0.8;
+}
+
+.price {
+    font-size: 3.5rem;
+    color: var(--Very-pale-orange);
+    padding-left: 10px;
+}
+
+.logo {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.card-2 {
+    width: 400px;
+    height: 450px;
+    background-color: var(--Very-pale-orange);
+    border-radius: 15px;
+    margin-top:10px;
+}
+
+.content-head {
+    font-size: 3.5rem;
+    padding: 20px 0 0 12px;
+}
+
+.chart-box{
+    width:350;
+    height: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.chart-box .each-col-box{
+    text-align: center;
+}
+
+.chart-box .column{
+    width: 50px;
+}
+
+.chart-box .column:hover .title{
+    opacity: 1;
+}
+
+.chart-box .title{
+    background: #3E2415;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+}
+
+.chart-box .col-bar{
+    display: inline-block;
+    width: 90%;
+    background: #EC755D;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease color;
+}
+
+.chart-box .col-bar:hover{
+    background: #FF9B87;
+}
+
+.chart-box .col-bar.max{
+    background: #76b5bc;
+}
+
+.chart-box .col-bar.max:hover{
+    background: #b4dfe5;
+}
+
+
+.chart-box .each-col-box .day{
+    color: #9b9b9b;
+    font-size: 2rem;
+}
+
+
+hr{
+    margin: 1rem;
+    background: #d0c9c94a;
+    height: 3px;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+.content-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.content-2 {
+    margin-top: -10px;
+}
+
+.bottom {
+    font-size: 18px;
+    color: var(--Medium-brown);
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-size: 30px;
+    color: var(--Dark-brown);
+}
+
+.content-3 {
+    margin-top:20px;
+}
+
+.rate {
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    color: var(--Dark-brown);
+}
+
+
+
+
+@media screen and (min-width:880px) {
+    .card-1 {
+        width: 400px;
+        height: 85px;
+        background-color:var(--Soft-red);
+        border-radius:15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .content-1 {
+        font-size: 16px;
+        color: var(--Very-pale-orange);
+        padding-left: 10px;
+        margin-bottom: 7px;
+        opacity: 0.8;
+    }
+    
+    .price {
+        font-size: 3.3rem;
+        color: var(--Very-pale-orange);
+        padding-left: 10px;
+    }
+    
+    .logo {
+        margin-right: 10px;
+        width: 55px;
+        height: 55px;
+    }
+    
+    .card-2 {
+        width: 400px;
+        height: 420px;
+        background-color: var(--Very-pale-orange);
+        border-radius: 15px;
+        margin-top:13px;
+    }
+    
+    .content-head {
+        font-size: 3.2rem;
+        padding: 20px 0 0 12px;
+    }
+    
+    .chart-box{
+        width:350;
+        height: 240px;
+    }
+    
+    .content-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .content-2 {
+        margin-top: 20px;
+    }
+    
+    .bottom {
+        font-size: 16px;
+        color: var(--Medium-brown);
+        margin-bottom: 10px;
+    }
+    
+    .total-price {
+        font-size: 27px;
+        color: var(--Dark-brown);
+    }
+    
+    .content-3 {
+        margin-top:47px;
+    }
+    
+.rate {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    color: var(--Dark-brown);
+}
+}
