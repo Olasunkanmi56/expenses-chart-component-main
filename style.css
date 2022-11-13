@@ -29,7 +29,7 @@ body {
 }
 
 .card-1 {
-    width: 400px;
+    width: 450px;
     height: 100px;
     background-color:var(--Soft-red);
     border-radius:15px;
@@ -59,7 +59,7 @@ body {
 }
 
 .card-2 {
-    width: 400px;
+    width: 450px;
     height: 450px;
     background-color: var(--Very-pale-orange);
     border-radius: 15px;
@@ -187,7 +187,7 @@ hr{
 
 @media screen and (min-width:880px) {
     .card-1 {
-        width: 400px;
+        width: 450px;
         height: 85px;
         background-color:var(--Soft-red);
         border-radius:15px;
@@ -217,7 +217,7 @@ hr{
     }
     
     .card-2 {
-        width: 400px;
+        width: 450px;
         height: 420px;
         background-color: var(--Very-pale-orange);
         border-radius: 15px;
